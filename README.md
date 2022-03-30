@@ -3,7 +3,7 @@ Example of generating API documentation with REST Docs, using JUnit tests.
 
 This project is used for quickstarting REST Docs in my further projects.
 
-Some important notes
+## Some important notes
 
 * [The template file ](https://github.com/andrejj10/Spring-Rest-Docs-with-JUnit-Testing-Demo/blob/master/src/main/asciidoc/index.adoc ) (.adoc) formatted must be 
 created inside /main/asciidoc manually.
@@ -14,6 +14,7 @@ created inside /main/asciidoc manually.
 
 *The HTML file will be generated inside the <mark>/target/generated-docs</mark> folder.
 
+## Telling a JUnit test to document the call
 
 Inside the JUnit test, while performing the GET call, we call the method __document("{methodName}})__ to document the request and response with the name of
 the test method.
@@ -41,5 +42,5 @@ the test method.
     }
 ```
 
-Packacing the maven project ( call <mark>./mvnw package</mark>) generates a HTML 
+Packacing the maven project ( call <mark>./mvnw package</mark>) generates the [documentation HTML](https://github.com/andrejj10/Spring-Rest-Docs-with-JUnit-Testing-Demo/blob/master/target/generated-docs/index.html).
 
