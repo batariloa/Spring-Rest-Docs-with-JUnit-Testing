@@ -1,0 +1,8 @@
+[source,options="nowrap"]
+----
+{
+  "id" : 2,
+  "description" : "This THURSDAY is okay, I guess",
+  "date" : "2022-03-31"
+}
+----

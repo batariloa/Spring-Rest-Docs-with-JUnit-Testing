@@ -1,0 +1,7 @@
+com/example/demo/DemoApplication.class
+com/example/demo/config/MyConfig.class
+com/example/demo/entity/Weather.class
+com/example/demo/converter/StringToDayEnum.class
+com/example/demo/controller/WeatherController.class
+com/example/demo/entity/DayEnum.class
+com/example/demo/controller/WeatherController$1.class

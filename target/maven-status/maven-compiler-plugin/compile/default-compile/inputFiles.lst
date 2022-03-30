@@ -1,0 +1,6 @@
+/home/dre/IdeaProjects/demo/src/main/java/com/example/demo/entity/DayEnum.java
+/home/dre/IdeaProjects/demo/src/main/java/com/example/demo/converter/StringToDayEnum.java
+/home/dre/IdeaProjects/demo/src/main/java/com/example/demo/entity/Weather.java
+/home/dre/IdeaProjects/demo/src/main/java/com/example/demo/controller/WeatherController.java
+/home/dre/IdeaProjects/demo/src/main/java/com/example/demo/DemoApplication.java
+/home/dre/IdeaProjects/demo/src/main/java/com/example/demo/config/MyConfig.java

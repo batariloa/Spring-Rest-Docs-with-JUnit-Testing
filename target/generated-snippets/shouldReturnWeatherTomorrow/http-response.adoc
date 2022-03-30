@@ -1,0 +1,12 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 91
+
+{
+  "id" : 2,
+  "description" : "This THURSDAY is okay, I guess",
+  "date" : "2022-03-31"
+}
+----
