@@ -21,7 +21,7 @@ public class WeatherController {
     private static final String template = "report";
     private final AtomicLong counter = new AtomicLong();
 
-    @Autowired
+
     StringToDayEnum stde;
 
     @GetMapping("/weather/{day}")
@@ -40,7 +40,7 @@ public class WeatherController {
         LocalDate currentMoment = LocalDate.now();
         Weather weather;
         String message;
-        switch (day) {
+        switch (day) { //switch to easier add further options
 
 
             case TOMORROW:
