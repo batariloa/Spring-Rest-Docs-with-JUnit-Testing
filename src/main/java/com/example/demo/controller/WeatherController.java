@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.ConversionFailedException;
 import org.springframework.lang.Nullable;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,34 +24,36 @@ public class WeatherController {
     @Autowired
     StringToDayEnum stde;
 
-    @GetMapping("/weather")
-    public Weather weather(@RequestParam("day") DayEnum day) {
+    @GetMapping("/weather/{day}")
+    public Weather weather(@PathVariable("day") DayEnum day) {
 
         System.out.println("R");
 
-        return new Weather(counter.incrementAndGet(), generateMessage(day), LocalDate.now());
+        return generateWeather(day);
 
 
     }
 
-    String generateMessage(DayEnum day) {
+    Weather generateWeather(DayEnum day) {
 
+        long id = counter.incrementAndGet();
         LocalDate currentMoment = LocalDate.now();
-        DayOfWeek dayAsked = currentMoment.getDayOfWeek();
+        Weather weather;
         String message;
         switch (day) {
-            case TODAY:
-                message = "This " + dayAsked.toString() + " is okay, I guess";
-                break;
 
 
             case TOMORROW:
-                message = "This " + dayAsked.plus(1).toString() + " is okay, I guess";
+                message = "This " + currentMoment.plusDays(1).getDayOfWeek().toString() + " is okay, I guess";
+                weather = new Weather(id, message, currentMoment.plusDays(1));
                 break;
 
             default:
-                message = "I don't know what day that is, bucko.";
+                message = "This " + currentMoment.plusDays(1).getDayOfWeek().toString() + " is okay, I guess";  //Today by default
+                weather = new Weather(id, message, currentMoment);
         }
-        return message;
+        return weather;
     }
+
+
 }

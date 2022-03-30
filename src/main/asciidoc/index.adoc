@@ -1,0 +1,19 @@
+= Weather API REST Docs
+
+This is an example output for a service running at http://localhost:8080:
+
+.request
+include::{snippets}/shouldReturnWeatherToday/http-request.adoc[]
+
+.response
+include::{snippets}/shouldReturnWeatherToday/http-response.adoc[]
+
+This request always provides a weather JSON object of today's date.
+
+.request
+include::{snippets}/shouldReturnWeatherTomorrow/http-request.adoc[]
+
+.response
+include::{snippets}/shouldReturnWeatherTomorrow/http-response.adoc[]
+
+This request always provides a weather JSON object of tomorrow's date.
