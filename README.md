@@ -7,7 +7,6 @@ This project is used for quickstarting REST Docs in my further projects.
 
 * [The template file ](https://github.com/andrejj10/Spring-Rest-Docs-with-JUnit-Testing-Demo/blob/master/src/main/asciidoc/index.adoc ) (.adoc) formatted must be 
 created inside /main/asciidoc manually.
-* Folder ${project.build.directory}/generated-snippets (target/generated-snippets) must also be manually created.
 
 * asciidoctor Maven plugin must be added to the [pom.xml](https://github.com/andrejj10/Spring-Rest-Docs-with-JUnit-Testing-Demo/blob/master/pom.xml) file.
 
